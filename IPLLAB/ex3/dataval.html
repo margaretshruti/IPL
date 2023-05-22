@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Car Form</h1>
+  <form id="carForm" onsubmit="return validateForm()">
+    <label for="carMake">Car Make:</label>
+    <input type="text" id="carMake" name="carMake" required>
+    
+    <label for="carModel">Car Model:</label>
+    <input type="text" id="carModel" name="carModel" required>
+    
+    <label for="carYear">Car Year:</label>
+    <input type="number" id="carYear" name="carYear" min="1886" max="2099" required>
+    
+    <label for="carColor">Car Color:</label>
+    <input type="text" id="carColor" name="carColor" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
